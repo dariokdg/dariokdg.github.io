@@ -521,67 +521,6 @@ section .title::after {
     color: #333;
 }
 
-.contact .contact-content .right form .fields {
-    display: flex;
-}
-
-.contact .contact-content .right form .field,
-.contact .contact-content .right form .fields .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.contact .contact-content .right form .textarea {
-    height: 80px;
-}
-
-.contact .contact-content .right form .name {
-    margin-right: 10px;
-}
-
-.contact .contact-content .right form .email {
-    margin-left: 10px;
-}
-
-.contact .contact-content .right form .field input,
-.contact .contact-content .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.contact .contact-content .right form .textarea textarea {
-    padding-top: 10px;
-    padding-bottom: 90px;
-    resize: none;
-}
-
-.contact .contact-content .right button {
-    display: inline-block;
-    background: cadetblue;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid cadetblue;
-    transition: all 0.3s ease;
-}
-
-.contact .contact-content .right button:hover {
-    color: rgb(90, 171, 175);
-    border: 2px solid rgb(35, 46, 46);
-    background: rgb(35, 46, 46);
-    transition: all 0.3s ease;
-}
-
 
 /* 'footer' section styling */
 
