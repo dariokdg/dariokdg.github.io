@@ -186,9 +186,24 @@ section .title {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
     font-family: 'Raleway', sans-serif;
+}
+
+section .subtitle {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 3px;
+    margin-bottom: 60px;
+    padding-bottom: 3px;
+    font-family: 'Raleway', sans-serif;
+    background: #333;
+    color: rgb(8, 134, 156);
+    border-radius: 1cm;
+    font-style: italic;
 }
 
 section .title::before {
@@ -215,12 +230,6 @@ section .title::after {
 
 
 /* 'about' section styling */
-
-.about .title::after {
-    content: "a very brief intro about myself";
-    font-size: 16px;
-    margin: 0 0 -20px 0;
-}
 
 .about .about-content .left {
     width: 45%;
@@ -284,13 +293,6 @@ section .title::after {
     min-height: 500px;
 }
 
-.services .title::after {
-    background: #333;
-    content: "at a high level, some of the services I can provide";
-    font-size: 16px;
-    margin: 0 0 -20px 0;
-}
-
 .services .serv-content .card {
     width: calc(25% - 20px);
     background: #222;
@@ -326,12 +328,6 @@ section .title::after {
 
 
 /* 'skills' section styling */
-
-.skills .title::after {
-    content: "a short, quick and clean description of my skillset";
-    font-size: 16px;
-    margin: 0 0 -20px 0;
-}
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
@@ -411,13 +407,6 @@ section .title::after {
     min-height: 500px;
 }
 
-.people .title::after {
-    background: #333;
-    content: "some of the awesome people I've worked with in the past";
-    font-size: 16px;
-    margin: 0 0 -20px 0;
-}
-
 .people .carousel .card {
     background: #222;
     border-radius: 6px;
@@ -490,10 +479,6 @@ section .title::after {
 
 
 /* 'contact' section styling */
-
-.contact .title::after {
-    content: "how to reach me - let's get in touch!"
-}
 
 .contact .contact-content .column {
     width: calc(50% - 30px);
