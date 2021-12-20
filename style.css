@@ -271,6 +271,11 @@ section .title::after {
     font-size: 18px;
 }
 
+.about .about-content .right .links {
+    width: 100%;
+    text-align: center;
+}
+
 .about .about-content .right a {
     display: inline-block;
     background: cadetblue;
@@ -720,5 +725,12 @@ footer span a:hover {
     footer {
         font-size: 14px;
         transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 432px) {
+    .about .about-content .right a {
+        font-size: 12px;
+        transition: all 0.3s ease;
     }
 }
