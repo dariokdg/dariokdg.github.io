@@ -178,6 +178,7 @@ footer {
 
 .about .about-content,
 .services .serv-content-cards,
+.services .serv-content-icons,
 .services .serv-content-details,
 .skills .skills-content,
 .contact .contact-content {
@@ -309,7 +310,7 @@ section .title::after {
 }
 
 .services .serv-content-cards {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .services .serv-content-cards .card {
@@ -345,6 +346,32 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
+.services .serv-content-icons {
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.services .serv-content-icons .iconBox {
+    width: calc(25% - 20px);
+    background: transparent;
+    border-radius: 2px;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.services .iconTriangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #222;
+    display: none;
+    opacity: 0;
+}
+
 .services .cardDetails-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -368,7 +395,7 @@ section .title::after {
 }
 
 .services .active {
-    display: block;
+    display: inline-block;
 }
 
 .services .visibleitem {
@@ -677,6 +704,9 @@ footer span a:hover {
     .services .serv-content-cards .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .services .serv-content-icons {
+        display: none;
     }
     .skills .skills-content .column,
     .contact .contact-content .column {

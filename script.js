@@ -22,9 +22,16 @@ $(document).ready(function() {
     })
 
     let an = document.getElementById('an');
+    let anIc = document.getElementById('anIc');
+
     let co = document.getElementById('co');
+    let coIc = document.getElementById('coIc');
+
     let de = document.getElementById('de');
+    let deIc = document.getElementById('deIc');
+
     let ma = document.getElementById('ma');
+    let maIc = document.getElementById('maIc');
 
     $('.card-analysis').click(function() {
         $('.details-consulting').removeClass("active");
@@ -36,13 +43,17 @@ $(document).ready(function() {
 
         if (an.classList.contains('active')) {
             an.classList.remove('visibleitem');
+            anIc.classList.remove('visibleitem');
             setTimeout(function() {
                 an.classList.remove('active');
+                anIc.classList.remove('active');
             }, 305);
         } else {
             an.classList.add('active');
+            anIc.classList.add('active');
             setTimeout(function() {
                 an.classList.add('visibleitem');
+                anIc.classList.add('visibleitem');
             }, 20);
         }
 
@@ -58,13 +69,17 @@ $(document).ready(function() {
 
         if (co.classList.contains('active')) {
             co.classList.remove('visibleitem');
+            coIc.classList.remove('visibleitem');
             setTimeout(function() {
                 co.classList.remove('active');
+                coIc.classList.remove('active');
             }, 305);
         } else {
             co.classList.add('active');
+            coIc.classList.add('active');
             setTimeout(function() {
                 co.classList.add('visibleitem');
+                coIc.classList.add('visibleitem');
             }, 20);
         }
 
@@ -80,13 +95,17 @@ $(document).ready(function() {
 
         if (de.classList.contains('active')) {
             de.classList.remove('visibleitem');
+            deIc.classList.remove('visibleitem');
             setTimeout(function() {
                 de.classList.remove('active');
+                deIc.classList.remove('active');
             }, 305);
         } else {
             de.classList.add('active');
+            deIc.classList.add('active');
             setTimeout(function() {
                 de.classList.add('visibleitem');
+                deIc.classList.add('visibleitem');
             }, 20);
         }
 
@@ -102,13 +121,17 @@ $(document).ready(function() {
 
         if (ma.classList.contains('active')) {
             ma.classList.remove('visibleitem');
+            maIc.classList.remove('visibleitem');
             setTimeout(function() {
                 ma.classList.remove('active');
+                maIc.classList.remove('active');
             }, 305);
         } else {
             ma.classList.add('active');
+            maIc.classList.add('active');
             setTimeout(function() {
                 ma.classList.add('visibleitem');
+                maIc.classList.add('visibleitem');
             }, 20);
         }
 
