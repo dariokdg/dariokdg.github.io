@@ -21,6 +21,99 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     })
 
+    let an = document.getElementById('an');
+    let co = document.getElementById('co');
+    let de = document.getElementById('de');
+    let ma = document.getElementById('ma');
+
+    $('.card-analysis').click(function() {
+        $('.details-consulting').removeClass("active");
+        $('.details-consulting').removeClass("visibleitem");
+        $('.details-development').removeClass("active");
+        $('.details-development').removeClass("visibleitem");
+        $('.details-management').removeClass("active");
+        $('.details-management').removeClass("visibleitem");
+
+        if (an.classList.contains('active')) {
+            an.classList.remove('visibleitem');
+            setTimeout(function() {
+                an.classList.remove('active');
+            }, 305);
+        } else {
+            an.classList.add('active');
+            setTimeout(function() {
+                an.classList.add('visibleitem');
+            }, 20);
+        }
+
+    })
+
+    $('.card-consulting').click(function() {
+        $('.details-analysis').removeClass("active");
+        $('.details-analysis').removeClass("visibleitem");
+        $('.details-development').removeClass("active");
+        $('.details-development').removeClass("visibleitem");
+        $('.details-management').removeClass("active");
+        $('.details-management').removeClass("visibleitem");
+
+        if (co.classList.contains('active')) {
+            co.classList.remove('visibleitem');
+            setTimeout(function() {
+                co.classList.remove('active');
+            }, 305);
+        } else {
+            co.classList.add('active');
+            setTimeout(function() {
+                co.classList.add('visibleitem');
+            }, 20);
+        }
+
+    })
+
+    $('.card-development').click(function() {
+        $('.details-analysis').removeClass("active");
+        $('.details-analysis').removeClass("visibleitem");
+        $('.details-consulting').removeClass("active");
+        $('.details-consulting').removeClass("visibleitem");
+        $('.details-management').removeClass("active");
+        $('.details-management').removeClass("visibleitem");
+
+        if (de.classList.contains('active')) {
+            de.classList.remove('visibleitem');
+            setTimeout(function() {
+                de.classList.remove('active');
+            }, 305);
+        } else {
+            de.classList.add('active');
+            setTimeout(function() {
+                de.classList.add('visibleitem');
+            }, 20);
+        }
+
+    })
+
+    $('.card-management').click(function() {
+        $('.details-analysis').removeClass("active");
+        $('.details-analysis').removeClass("visibleitem");
+        $('.details-consulting').removeClass("active");
+        $('.details-consulting').removeClass("visibleitem");
+        $('.details-development').removeClass("active");
+        $('.details-development').removeClass("visibleitem");
+
+        if (ma.classList.contains('active')) {
+            ma.classList.remove('visibleitem');
+            setTimeout(function() {
+                ma.classList.remove('active');
+            }, 305);
+        } else {
+            ma.classList.add('active');
+            setTimeout(function() {
+                ma.classList.add('visibleitem');
+            }, 20);
+        }
+
+    })
+
     var typed = new Typed(".typing", {
         strings: [
             "> a software developer",

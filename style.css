@@ -177,7 +177,8 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
+.services .serv-content-cards,
+.services .serv-content-details,
 .skills .skills-content,
 .contact .contact-content {
     display: flex;
@@ -307,7 +308,11 @@ section .title::after {
     min-height: 500px;
 }
 
-.services .serv-content .card {
+.services .serv-content-cards {
+    margin-bottom: 25px;
+}
+
+.services .serv-content-cards .card {
     width: calc(25% - 20px);
     background: #222;
     text-align: center;
@@ -317,27 +322,65 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.services .card:hover {
     background: rgb(13, 58, 66);
 }
 
-.services .serv-content .card .box {
+.services .card .box {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.services .box:hover {
     transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.services .card i {
     font-size: 50px;
     color: rgb(8, 134, 156);
 }
 
-.services .serv-content .card .text {
+.services .card .text {
     font-size: 25px;
     font-weight: 600;
     margin: 10px 0 7px 0;
+}
+
+.services .cardDetails-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.services .cardDetails {
+    color: #EEE;
+    background: #222;
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0.2cm;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.services .active {
+    display: block;
+}
+
+.services .visibleitem {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.services .cardDetailTitle {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
 }
 
 
@@ -628,7 +671,10 @@ footer span a:hover {
         width: 300px;
         transition: all 0.5s ease;
     }
-    .services .serv-content .card {
+    .services .card .text {
+        font-size: 20px;
+    }
+    .services .serv-content-cards .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -680,12 +726,12 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .services .serv-content-cards .card {
         width: 100%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .about .about-content .left img {
         height: 170px;
         width: 170px;
@@ -725,6 +771,9 @@ footer span a:hover {
     footer {
         font-size: 14px;
         transition: all 0.5s ease;
+    }
+    .services .cardDetails {
+        font-size: 14px;
     }
 }
 
