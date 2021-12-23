@@ -363,13 +363,44 @@ section .title::after {
 
 .services .iconTriangle {
     display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid #222;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 10px #222 solid;
+    border-bottom: 10px #222 solid;
     display: none;
     opacity: 0;
+}
+
+.services .iconTriangle:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #222 solid;
+    border-bottom: 2px #222 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: iconTriangle;
+}
+
+@keyframes iconTriangle {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-4px, -4px);
+    }
 }
 
 .services .cardDetails-wrapper {
