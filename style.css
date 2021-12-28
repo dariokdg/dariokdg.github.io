@@ -32,7 +32,7 @@ html {
 
 .navbar.sticky {
     padding: 8px 0;
-    background: rgb(19, 39, 51);
+    background: rgb(13, 58, 66);
 }
 
 .navbar .max-width {
@@ -55,7 +55,7 @@ html {
 
 .navbar .menu li a {
     display: block;
-    color: #AAA;
+    color: #CCC;
     font-size: 18px;
     font-weight: 700;
     margin-left: 25px;
@@ -67,11 +67,11 @@ html {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #1853d1;
+    color: rgb(90, 171, 175);
 }
 
 .menu-btn {
-    color: #fff;
+    color: #CCC;
     font-size: 23px;
     cursor: pointer;
     display: none;
